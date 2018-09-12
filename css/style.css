@@ -1,0 +1,60 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  
+  margin: 0;
+}
+
+/* 헤더 */
+.header {
+    background-image:url("https://image.freepik.com/free-vector/watercolor-floral-frame-with-golden-lineal-style_23-2147864966.jpg");
+    padding: 20px;
+    text-align: center;
+}
+
+/* 바 색상 */
+.topnav {
+    overflow: hidden;
+    background-color: green;
+}
+
+/* 링크 색상(기본상태)*/
+.topnav a {
+    float: left;
+    display: black;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* 링크의 색상(마우스에 대였을때)r */
+.topnav a:hover {
+    background-color: white;
+    color: green;
+}
+
+/* 밑에 설명칸 */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 간격 */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
